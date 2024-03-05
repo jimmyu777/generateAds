@@ -37,7 +37,7 @@ def main():
     st.markdown('---')
     
     # 페이지를 두 개의 열로 나눕니다.
-    col1, col2 = st.column(2)
+    col1, col2 = st.columns(2)
     with col1:
         # 첫 번째 열에 입력 필드를 추가합니다.
         name = st.text_input("제품명", placeholder=" ")
