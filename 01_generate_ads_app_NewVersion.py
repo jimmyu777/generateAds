@@ -11,7 +11,7 @@ def askGpt(prompt, apikey):
     client = openai.OpenAI(api_key=apikey)
     # GPT-3.5 모델에 질문을 전송하고 응답을 받습니다. 질문은 'prompt' 변수에 담겨 있습니다.
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # 사용할 GPT 모델을 지정합니다.
+        model="gpt-4-0125-preview",  # 사용할 GPT 모델을 지정합니다.
         messages=[{"role": "user", "content": prompt}]  # 사용자의 역할과 내용을 지정합니다.
     )
     # GPT로부터 받은 첫 번째 응답의 내용을 추출합니다.
